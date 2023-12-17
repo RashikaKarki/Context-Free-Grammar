@@ -1,8 +1,8 @@
 from helper import timing_decorator, write_sentences_to_file
 
-class SetenceGenerator:
+class SentenceGenerator:
     """
-    SetenceGenerator class generates unique sentences based on a context-free grammar.
+    SentenceGenerator class generates unique sentences based on a context-free grammar.
     """
 
     def __init__(self) -> None:
@@ -82,7 +82,7 @@ class SetenceGenerator:
         print(f'Successfully generate {total_sentence} unique sentences.')
         return self.unique_sentences
 
-sentence_generator = SetenceGenerator()
+sentence_generator = SentenceGenerator()
 unique_sentences = sentence_generator.generate_unique_sentences(10000)
 write_sentences_to_file('output.txt', unique_sentences)
 
