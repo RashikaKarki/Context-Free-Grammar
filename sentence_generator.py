@@ -5,7 +5,7 @@ class SentenceGenerator:
     SentenceGenerator class generates unique sentences based on a context-free grammar.
     """
 
-    def __init__(self, rule) -> None:
+    def __init__(self, rule: dict) -> None:
         """
         Initialize the SetenceGenerator object.
 
@@ -16,7 +16,6 @@ class SentenceGenerator:
         - unique_sentences (set): Set to store unique generated sentences.
         """
 
-        self.start_symbol = 'S'
         self.rule = rule
         self.unprocessed_queue = [['S']]
         self.unique_sentences = set()
