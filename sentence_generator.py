@@ -10,7 +10,6 @@ class SentenceGenerator:
         Initialize the SetenceGenerator object.
 
         Attributes:
-        - start_symbol (str): The start symbol of the grammar.
         - rule (dict): Grammar rules defining the language.
         - unprocessed_queue (list): Queue to track unprocessed grammar sequences.
         - unique_sentences (set): Set to store unique generated sentences.
